@@ -1,0 +1,29 @@
+###
+GET http://localhost:4000/api/employees
+
+
+###
+POST http://localhost:4000/api/employees
+Content-Type: application/json
+
+{
+    "name": "Cosme Fulanito3",
+    "position": "Jefe",
+    "office": "Rome",
+    "salary": 2000
+
+}
+
+###
+GET http://localhost:4000/api/employees/5ff4c0493ee3210e40beef4b
+
+###
+DELETE http://localhost:4000/api/employees/5ff4c013d0a9692b241f0ae1
+
+###
+PUT http://localhost:4000/api/employees/5ff4beea337ebd116479e4b1 
+Content-Type: application/json
+
+{
+    "salary": 500000
+}
